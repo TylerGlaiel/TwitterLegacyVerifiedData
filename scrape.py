@@ -20,7 +20,7 @@ for page in tweepy.Cursor(twitter.friends_ids, screen_name="verified").pages():
     print("ids gathered: "+str(len(ids)))
     time.sleep(60)
 
-file = open("verified_following_ids.json", "w")
+file = open("verified_following_ids.txt", "w")
 file.write(str(ids))
 
 
@@ -56,9 +56,9 @@ for u in users:
     user_map.append((u.id_str, u.screen_name))
     
 print("saving usernames")
-file3 = open("verified_following_usernames.json", "w", encoding='utf-8')
+file3 = open("verified_following_usernames.txt", "w", encoding='utf-8')
 file3.write(str(user_map))
 
 print("saving data")
-file2 = open("verified_following_data.json", "w", encoding='utf-8')
+file2 = open("verified_following_data.txt", "w", encoding='utf-8')
 file2.write(str(users))
