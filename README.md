@@ -11,3 +11,4 @@ legacy_verified_ids.txt: an array of all legacy verified user ids
 
 legacy_verified_usernames.txt: an array of tuples of verified user ids along with their usernames  
 
+check releases for a zip of the full user info in case any other information from them is useful (316mb compressed, 3.6gb uncompressed)
